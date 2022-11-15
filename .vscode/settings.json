@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/f598ff3e-01f5-4a24-90b6-6008c38a6380/appservices/subscriptions/f598ff3e-01f5-4a24-90b6-6008c38a6380/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/ucll-onderdeel6-timeserver",
+    "appService.deploySubpath": "Voorbeeld1.TimeServer"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "case2-weatherapp-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install & npm run watch",
+    "build": "npx webpack",
+    "watch": "npx webpack --watch"
+  },
+  "keywords": [
+    "UCLL",
+    "weather"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
