@@ -1,10 +1,10 @@
 {
-  "name": "voorbeeld2.opteller",
+  "name": "voorbeeld2.calculatorserver",
   "version": "1.0.0",
   "description": "",
   "main": "hostingstart.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cd Server & npm install & npm run start"
   },
   "keywords": [],
   "author": "",
