@@ -28,14 +28,18 @@ formElement.addEventListener("submit", async function (e) {
 
 // Berichten (om de seconde) ophalen
 async function getMessages() {
-    let response = await fetch("/api/chat");
-    let chatMessages = await response.json();
-    let chatHistory = "";
-    for (let i = 0; i < chatMessages.length; i++) {
-        let chatMessage = new ChatMessage(chatMessages[i]._nickname, chatMessages[i]._message);
-        chatHistory += `${chatMessage.nickname}: ${chatMessage.message}\n`; // \n = new line
+    try {
+        let response = await fetch("/api/chat");
+        let chatMessages = await response.json();
+        let chatHistory = "";
+        for (let i = 0; i < chatMessages.length; i++) {
+            let chatMessage = new ChatMessage(chatMessages[i]._nickname, chatMessages[i]._message);
+            chatHistory += `${chatMessage.nickname}: ${chatMessage.message}\n`; // \n = new line
+        }
+        document.querySelector("textarea").value = chatHistory;
+    } catch (error) {
+        console.error(error);
     }
-    document.querySelector("textarea").value = chatHistory;
 
     // Binnen 1 seconde zichzelf weer aanroepen. Alternatief: setInterval().
     setTimeout(getMessages, 1000);
