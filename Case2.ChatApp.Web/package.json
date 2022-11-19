@@ -1,13 +1,16 @@
 {
   "name": "case2-weatherapp",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm install & concurrently \"cd server & npm run start\" \"cd client & npm run start\""
+    "start": "npm install & concurrently \"cd server & npm run start\" \"cd client & npm run start\"",
+    "start-host": "cross-env PORT=3000 node hostingstart.js"
   },
   "author": "UCLL",
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "concurrently": "^7.5.0"
   }
 }

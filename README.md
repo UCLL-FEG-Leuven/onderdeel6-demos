@@ -27,6 +27,7 @@ Hier werd **geen** node (+ express) en webpack gebruikt om het voorbeeld zo eenv
 
 ## Case 2 - ChatApp
 (i) Deze case maakt ook gebruik van Webpack.  
+(i) Deze maakt maakt gebuik van ES6 modules. In package.json staat "type": "module". Zo kan er gebruik worden gemaakt van import/export.  
 
 Om deze demo case te starten open je eerst een terminal of een command prompt in de **/Case2.ChatApp.Web** directory.  
 
