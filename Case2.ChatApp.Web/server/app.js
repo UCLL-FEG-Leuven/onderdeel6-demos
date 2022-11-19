@@ -1,6 +1,5 @@
 import ChatMessage from "../shared/chat-message.js";
 import express from "express";
-const port = 3000;
 
 const app = express();
 
@@ -20,6 +19,6 @@ app.post('/api/chat', function(req, res) {
     res.status(204).end();
 });
 
-app.listen(port, () => {
-    console.log(`Server is listening on port ${port}`);
+app.listen(process.env.PORT, () => {
+    console.log(`Server is listening on port ${process.env.PORT}`);
 });

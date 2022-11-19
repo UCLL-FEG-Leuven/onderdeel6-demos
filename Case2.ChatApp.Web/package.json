@@ -8,6 +8,6 @@
   },
   "author": "UCLL",
   "devDependencies": {
-    "concurrently": "^7.1.0"
+    "concurrently": "^7.5.0"
   }
 }
